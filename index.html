@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <link
-    rel="stylesheet"
-    href="style.css"
-  />
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-  crossorigin="anonymous"
-/>
-  <script
-    type="text/javascript"
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="Project_Javascript_jQuery.js"
-  ></script>
-</head>
-<body>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="Project_Javascript_jQuery.js"></script>
+  </head>
+  <body>
     
-  <div class="container main_section">
-    <div class="Q_A">
-      <h2 class="question">question</h2>
-      <ol>
-        <li>
-          <input type="radio" name="answer" id="ans1">
-          <label for="ans1" id="option1"></label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="ans2">
-          <label for="ans2" id="option2"></label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="ans3">
-          <label for="ans3" id="option3"></label>
-        </li>
-        <li>
-          <input type="radio" name="answer" id="ans4">
-          <label for="ans4" id="option4"></label>
-        </li>
-      </ol>
-      <button id="submit">submit</button>
-      <div id="showScore" class="scoreA"></div>
+    <div class="question_number">
+      <table>
+        <tr>
+          <td>
+            USER NAME :
+            </td>
+            <td>
+            <input type="text" id="user_name" name="user_name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            ENTER NUMBER OF QUESTION :
+            </td>
+            <td>
+            <input type="number" id="num" value="num" name="num" />
+          </td>
+          </tr>
+      </table>
     </div>
-  </div>
+
+    <div class="user_inputs">
+      <form action="">
+        <table>
+          <tr>
+            <td>ENTER QUESTION</td>
+            <td><input type="text" id="quiz_question" /></td>
+          </tr>
+          <tr>
+            <td>ENTER OPTION - A</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>ENTER OPTION - B</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>ENTER OPTION - C</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>ENTER OPTION - D</td>
+            <td><input type="text" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div class="container quiz_section">
+      <div class="Q_A">
+        <h2 class="question">question</h2>
+        <ol>
+          <li>
+            <input type="radio" name="answer" id="ans1" />
+            <label for="ans1" id="option1"></label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="ans2" />
+            <label for="ans2" id="option2"></label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="ans3" />
+            <label for="ans3" id="option3"></label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="ans4" />
+            <label for="ans4" id="option4"></label>
+          </li>
+        </ol>
+        <button id="submit" onclick="myForm()">submit</button>
+        <div id="showScore" class="scoreA"></div>
+      </div>
+    </div>
+
+    <button class="start_btn">START QUIZ</button>
+    <button class="default_btn" onclick="myForm()">DEFAULT</button>
+    <button class="customized_btn" onclick="myForm()">CUSTOMIZED QUIZ</button>
+    <button class="submit_btn2">SUBMIT2</button>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

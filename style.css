@@ -6,9 +6,8 @@
     font-weight: 300;
 }
 
-.main_section{
+.quiz_section{
     min-height: 40rem;
-    /* background-color: rgb(76, 170, 150); */
     display: grid;
     place-items: center;
 }
